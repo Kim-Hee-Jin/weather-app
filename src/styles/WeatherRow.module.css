@@ -1,0 +1,82 @@
+.card {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background: transparent;
+    font-family: "Pretendard", sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+@media (max-width: 1279px) and (min-width: 800px) {
+  .card {
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 799px) {
+  .card {
+    width: 800px;
+    min-width: 800px;
+    margin: 0;
+    box-sizing: border-box;
+  }
+}
+  
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon, .iconPlaceholder {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #FFD2CC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.center {
+  flex: 1;
+  margin-left: 1rem;
+}
+
+.time {
+  font-size: 30px;
+  font-weight: 700;
+  color: #3D3D3D;
+  margin-bottom: 0.1rem;
+}
+
+.desc {
+  font-size: 20px;
+  font-weight: 600;
+  color: #8B8B8B;
+  padding-right: 0.5rem;
+}
+
+.right {
+  text-align: right;
+  padding-right: 2.5rem;
+}
+
+.tempSet {
+  font-size: 30px;
+  font-weight: 700;
+  color: #3D3D3D;
+  letter-spacing: 1px;
+  padding-right: 0.5rem;
+}

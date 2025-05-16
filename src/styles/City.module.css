@@ -1,0 +1,57 @@
+.container {
+  font-family: "Pretendard", sans-serif;
+  background-color: #FAF7F5;
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: auto;
+}
+
+.loading {
+  padding: 32px;
+}
+
+.forecastCard {
+  width: 1200px;
+  margin: 1.5rem auto 1.5rem auto;
+  padding: 0;
+  padding-top: 1rem;
+  background: #FFFFFF;
+  border: 1px solid #DFDFDF;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1279px) and (min-width: 800px) {
+  .forecastCard {
+    width: 100vw;
+    min-width: 0;
+    border-radius: 0;
+    margin: 1.5rem 0 1.5rem 0;
+  }
+}
+
+@media (max-width: 799px) {
+  .forecastCard {
+    width: 800px;
+    min-width: 800px;
+    border-radius: 0;
+    margin: 1.5rem 0 1.5rem 0;
+  }
+  .container {
+    min-width: 800px;
+    overflow-x: auto;
+  }
+}
+
+.forecastCard > div:not(:last-child) {
+  border-bottom: 1px solid #DFDFDF;
+}
+
+
+.forecastTitle {
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 1rem;
+  text-align: center;
+  padding-bottom: 8px;
+}

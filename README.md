@@ -1,34 +1,59 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Weather App
 
-## Getting Started
+> **Next.js + GraphQL + OpenWeatherMap 기반의 도시별 날씨 정보 웹앱**
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
+## 주요 기능
+- 도시별 현재 날씨 및 5일 예보 확인
+- 풍속, 습도, 체감온도 등 상세 정보 표시
+- 반응형 UI (PC/태블릿/모바일 지원)
+- 깔끔하고 직관적인 디자인
+
+---
+
+## 설치 및 실행 방법 (누구나 따라할 수 있음)
+
+1. **프로젝트 다운로드**
+   ```bash
+   git clone https://github.com/your-username/weather-app.git
+   cd weather-app
+   ```
+2. **필수 패키지 설치**
+   ```bash
+   npm install
+   ```
+3. **환경변수 파일(.env.local) 만들기**
+   - 프로젝트 루트(최상위)에 `.env.local` 파일을 새로 만듭니다.
+   - 아래처럼 작성하세요:
+     ```env
+     WEATHER_API_KEY=여기에_본인_API키_입력
+     ```
+   - `WEATHER_API_KEY`만 있으면 됩니다! (다른 변수는 필요 없음)
+4. **OpenWeatherMap API 키 발급**
+   - [OpenWeatherMap 회원가입](https://home.openweathermap.org/users/sign_up)
+   - 로그인 후 [API Keys](https://home.openweathermap.org/api_keys)에서 키 복사
+   - 무료 플랜으로도 충분히 테스트 가능
+5. **개발 서버 실행**
+   ```bash
+   npm run dev
+   ```
+   - 브라우저에서 [http://localhost:3000](http://localhost:3000) 접속
+
+---
+
+## 폴더 구조 (주요 파일 설명)
+
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+weather-app/
+├── public/            # 정적 리소스 (favicon 등)
+├── src/
+│   ├── components/    # 리액트 컴포넌트들
+│   ├── graphql/       # GraphQL 스키마, 쿼리, 리졸버
+│   ├── lib/           # Apollo 클라이언트 설정
+│   ├── pages/         # Next.js 라우팅/페이지
+│   └── styles/        # CSS 모듈
+├── .env.local         # (직접 생성, 절대 업로드 금지)
+├── package.json
+└── ...
+```

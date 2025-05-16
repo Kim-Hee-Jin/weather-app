@@ -1,0 +1,35 @@
+.listContainer {
+  width: 1200px;
+  background: transparent;
+  padding: 0;
+  font-family: "Pretendard", sans-serif;
+  display: block;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+@media (max-width: 1279px) and (min-width: 800px) {
+  .listContainer {
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+  }
+}
+
+@media (max-width: 799px) {
+  .listContainer {
+    width: 800px;
+    min-width: 800px;
+    margin: 0;
+  }
+}
+
+
+.container::-webkit-scrollbar {
+    height: 6px;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background: #8B8B8B;
+    border-radius: 4px;
+}

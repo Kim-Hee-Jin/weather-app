@@ -1,0 +1,120 @@
+.container {
+    font-family: "Pretendard", sans-serif;
+    width: 1200px;
+    margin: 1rem auto 1.5rem auto;
+    padding: 1rem;
+    background: #FFFFFF;
+    border: 1px solid #DFDFDF;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+@media (max-width: 1279px) and (min-width: 800px) {
+  .container {
+    width: 100vw;
+    min-width: 0;
+    border-radius: 0;
+    margin: 0 0 1.5rem 0;
+  }
+}
+
+@media (max-width: 799px) {
+  .container {
+    width: 800px;
+    min-width: 800px;
+    border-radius: 0;
+    margin: 0;
+  }
+}
+
+  
+  .left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .icon {
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #FFD2CC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+  }
+  
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    min-width: 140px;
+    gap: 2px;
+    overflow: hidden;
+  }
+  
+  .date {
+    font-size: 24px;
+    font-weight: 700;
+    color: #555555;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin: 0;
+  }
+  
+  .city {
+    font-size: 36px;
+    font-weight: 700;
+    color: #3D3D3D;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+  }
+  
+  .population {
+    font-size: 14px;
+    color: #8b8b8b;
+    margin-left: 6px;
+    font-weight: 600;
+  }
+  
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    min-width: 140px;
+    gap: 2px;
+    flex-shrink: 0;
+  }
+  
+  .temp {
+    font-size: 50px;
+    font-weight: 700;
+    color: #3D3D3D;
+    margin: 0;
+  }
+  
+  .description {
+    font-size: 14px;
+    font-weight: 600;
+    color: #8B8B8B;
+    line-height: 1.2;
+    margin: 0;
+    white-space: nowrap;
+    text-align: right;
+  }
+  

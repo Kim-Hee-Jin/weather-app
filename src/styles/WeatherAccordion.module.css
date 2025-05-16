@@ -1,0 +1,62 @@
+.accordion {
+    font-family: "Pretendard", sans-serif;
+    margin: 1rem auto;
+    background: transparent;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+@media (max-width: 1279px) and (min-width: 800px) {
+  .accordion {
+    width: 100vw;
+    min-width: 0;
+    margin: 0;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 799px) {
+  .accordion {
+    width: 800px;
+    min-width: 800px;
+    margin: 0;
+    padding: 0 1rem;
+  }
+}
+
+
+.accordion:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.toggle {
+    width: 100%;
+    background-color: #FFFFFF;
+    text-align: left;
+    font-size: 30px;
+    font-weight: 700;
+    color: #3D3D3D;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    box-sizing: border-box;
+}
+
+.icon {
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    color: #FF0045;
+}
+
+.content {
+    padding: 1rem;
+    background-color: #FFFFFF;
+}
