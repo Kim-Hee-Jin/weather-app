@@ -4,19 +4,11 @@
 
 ---
 
-## 주요 기능
-- 도시별 현재 날씨 및 5일 예보 확인
-- 풍속, 습도, 체감온도 등 상세 정보 표시
-- 반응형 UI (PC/태블릿/모바일 지원)
-- 깔끔하고 직관적인 디자인
-
----
-
-## 설치 및 실행 방법 (누구나 따라할 수 있음)
+## 설치 및 실행 방법
 
 1. **프로젝트 다운로드**
    ```bash
-   git clone https://github.com/your-username/weather-app.git
+   git clone https://github.com/Kim-Hee-Jin/weather-app.git
    cd weather-app
    ```
 2. **필수 패키지 설치**
@@ -29,11 +21,11 @@
      ```env
      WEATHER_API_KEY=여기에_본인_API키_입력
      ```
-   - `WEATHER_API_KEY`만 있으면 됩니다! (다른 변수는 필요 없음)
+
 4. **OpenWeatherMap API 키 발급**
    - [OpenWeatherMap 회원가입](https://home.openweathermap.org/users/sign_up)
    - 로그인 후 [API Keys](https://home.openweathermap.org/api_keys)에서 키 복사
-   - 무료 플랜으로도 충분히 테스트 가능
+   
 5. **개발 서버 실행**
    ```bash
    npm run dev
